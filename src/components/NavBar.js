@@ -17,8 +17,8 @@ export default function NavBar() {
 			  </Link>
 			</li>
 			<li className="link">
-			  <Link to="/todo">
-				To do List
+			  <Link to="/Calendar">
+				Calendar
 			  </Link>
 			</li>
 			<li className="link">
