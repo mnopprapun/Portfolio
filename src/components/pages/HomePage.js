@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function HomePage() {
-	return (
-		<div>
-			hello homepage
-		</div>
-	)
+  return <div>hello homepage</div>;
 }

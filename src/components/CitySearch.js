@@ -55,14 +55,14 @@ export default function CitySearch() {
   return (
     <div className="App">
       <header className="App-header">
-          <input
-            type="text"
-            className="search-bar"
-            placeholder="Search City"
-            onChange={(e) => setQuery(e.target.value)}
-            value={query}
-            onKeyPress={search}
-          ></input>
+        <input
+          type="text"
+          className="search-bar"
+          placeholder="Search City"
+          onChange={(e) => setQuery(e.target.value)}
+          value={query}
+          onKeyPress={search}
+        ></input>
       </header>
       <div className="container">
         {typeof weather.main != "undefined" ? (
@@ -72,7 +72,9 @@ export default function CitySearch() {
                 {weather.name}, {weather.sys.country}
               </h1>
               <h5 className="py-4">{dateBuilder(new Date())}</h5>
-              <div className="temp">{weather.main.temp}&deg;F</div>
+              <div className="temp">
+                Current Temperature {weather.main.temp}&deg;F
+              </div>
               <div className="description">{weather.weather[0].main}</div>
               <button className="button">Save</button>
             </div>
